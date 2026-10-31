@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Sap Textiles | Premium Fabrics & Readymades</title>
+    <meta name="description" content="Premium textiles, traditional wear, and high-quality readymades in Changanassery, Kerala.">
+    
+    <!-- Google Fonts for Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            500: '#8c6b5d', // Elegant warm taupe/brown
+                            800: '#4a3b32',
+                            900: '#2d241e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth image loading and elegant touches */
+        .hero-bg {
+            background-image: linear-gradient(rgba(45, 36, 30, 0.7), rgba(45, 36, 30, 0.4)), url('https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-brand-100 transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl md:text-3xl font-bold text-brand-900 tracking-tight">
+                        Beauty Sap <span class="text-brand-500 italic font-light">Textiles</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-sm font-medium text-brand-900 hover:text-brand-500 transition-colors uppercase tracking-widest">Home</a>
+                    <a href="#about" class="text-sm font-medium text-brand-900 hover:text-brand-500 transition-colors uppercase tracking-widest">About</a>
+                    <a href="#collections" class="text-sm font-medium text-brand-900 hover:text-brand-500 transition-colors uppercase tracking-widest">Collections</a>
+                    <a href="#contact" class="text-sm font-medium text-brand-900 hover:text-brand-500 transition-colors uppercase tracking-widest">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Visual Only for simplicity in 1 file) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-brand-900 hover:text-brand-500 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-bg h-screen min-h-[600px] flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-brand-100 font-sans font-medium tracking-[0.2em] uppercase mb-4 fade-in-up">Welcome to Elegance</p>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight fade-in-up delay-100">
+                Crafting Traditions,<br>Weaving Quality.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-10 font-light max-w-2xl mx-auto fade-in-up delay-200">
+                Discover our curated collection of premium fabrics, authentic traditional wear, and exquisite ready-mades designed for every occasion.
+            </p>
+            <div class="fade-in-up delay-300">
+                <a href="#collections" class="inline-block bg-brand-500 hover:bg-brand-800 text-white font-medium px-8 py-4 rounded-sm tracking-widest uppercase transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Explore Collections
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="absolute inset-0 bg-brand-100 transform translate-x-4 translate-y-4 rounded-sm"></div>
+                    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1000&auto=format&fit=crop" alt="Premium Fabrics" class="relative z-10 w-full h-auto object-cover rounded-sm shadow-xl aspect-[4/5]">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-brand-500 text-sm font-bold tracking-[0.2em] uppercase mb-3">Our Heritage</h2>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-brand-900 mb-6">A Legacy of Fine Textiles</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed font-light">
+                        At <strong class="font-medium text-brand-800">Beauty Sap Textiles</strong>, we believe that every thread tells a story. Located in the heart of Changanassery, we have established ourselves as a premier destination for those who appreciate the finer details in clothing and fabrics.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed font-light">
+                        From hand-selected, high-quality raw fabrics to meticulously crafted traditional garments and modern readymades, our collections are curated to offer unparalleled comfort, durability, and style. Whether you are seeking the perfect silk for a wedding or comfortable daily wear, we bring you the finest selections.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 border-t border-brand-100 pt-8">
+                        <div>
+                            <p class="text-3xl font-serif text-brand-500 mb-1">100%</p>
+                            <p class="text-xs font-bold text-brand-900 uppercase tracking-wider">Quality Assured</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-serif text-brand-500 mb-1">Premium</p>
+                            <p class="text-xs font-bold text-brand-900 uppercase tracking-wider">Fabric Sourcing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="py-24 bg-brand-50 border-t border-brand-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-500 text-sm font-bold tracking-[0.2em] uppercase mb-3">What We Offer</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-brand-900">Our Signature Collections</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?q=80&w=800&auto=format&fit=crop" alt="High-Quality Fabrics" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center border-t border-brand-50">
+                        <h4 class="font-serif text-xl font-bold text-brand-900 mb-3">High-Quality Fabrics</h4>
+                        <p class="text-slate-500 font-light text-sm line-clamp-3">Explore our vast yardage of premium silks, cottons, linens, and blended materials perfect for bespoke tailoring and custom designs.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1610030469983-98e550d615ef?q=80&w=800&auto=format&fit=crop" alt="Traditional Wear" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center border-t border-brand-50">
+                        <h4 class="font-serif text-xl font-bold text-brand-900 mb-3">Traditional Wear</h4>
+                        <p class="text-slate-500 font-light text-sm line-clamp-3">Embrace your cultural roots with our exquisite range of ethnic wear, featuring intricate embroidery and authentic traditional patterns.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=800&auto=format&fit=crop" alt="Premium Readymades" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 text-center border-t border-brand-50">
+                        <h4 class="font-serif text-xl font-bold text-brand-900 mb-3">Premium Readymades</h4>
+                        <p class="text-slate-500 font-light text-sm line-clamp-3">Ready-to-wear fashion that doesn't compromise on quality. Discover contemporary styles crafted with superior stitching and fabric.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Meta Verification Footer / Contact Section -->
+    <footer id="contact" class="bg-brand-900 text-white pt-20 pb-10 border-t-4 border-brand-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 border-b border-brand-800 pb-16">
+                
+                <!-- Business Identity (CRITICAL FOR META VERIFICATION) -->
+                <div>
+                    <h2 class="font-serif text-3xl font-bold text-brand-100 tracking-tight mb-6">
+                        Beauty Sap <span class="text-brand-500 italic font-light">Textiles</span>
+                    </h2>
+                    <p class="text-brand-100/70 font-light leading-relaxed max-w-md mb-8">
+                        Your trusted destination for premium fabrics, traditional elegance, and modern readymades. Quality woven into every thread.
+                    </p>
+                    
+                    <div>
+                        <h3 class="text-xl font-serif text-white mb-6">BEAUTY SAP TEXTILES PRIVATE LIMITED</h3>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1.5 mr-3 text-gold"></i>
+                                <span>26/492, Atlas Building, College Road,<br>Changanacherry, Kottayam,<br>Kerala, 686101</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone mr-3 text-gold"></i>
+                                <span>+91 9446022678</span> <!-- Replace with your actual Meta registered number -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact & Hours -->
+                <div class="flex flex-col md:items-end md:text-right">
+                    <h3 class="text-lg font-serif text-white mb-6">Get in Touch</h3>
+                    <div class="space-y-4 mb-8">
+                        <p class="text-brand-100 hover:text-brand-500 transition-colors">
+                            <i class="fas fa-envelope mr-2 text-brand-500"></i> contact@beautysaptextiles.com
+                        </p>
+                        <p class="text-brand-100 hover:text-brand-500 transition-colors">
+                            <i class="fas fa-phone-alt mr-2 text-brand-500"></i> +91 (XXX) XXX-XXXX
+                        </p>
+                    </div>
+
+                    <h3 class="text-lg font-serif text-white mb-4">Business Hours</h3>
+                    <p class="text-brand-100/70 font-light text-sm">Monday - Saturday: 9:30 AM - 8:00 PM</p>
+                    <p class="text-brand-100/70 font-light text-sm mt-1">Sunday: Closed</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-[11px] font-bold tracking-widest uppercase text-brand-100/40">
+                <p>&copy; 2026 Beauty Sap Textiles. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Changanassery, Kerala</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
